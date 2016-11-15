@@ -1,3 +1,8 @@
+body {
+  width:1000px;
+  margin:0px auto;
+}
+
 header {
     height: 150px;
     background: none;
@@ -38,15 +43,32 @@ li a:active{
 p{
     font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 16px;
-    color: teal;
+    color: black;
     padding-left: 60px;
     padding-right: 60px; 
+    margin-top: 10px;
+}
+
+p.float-right{
+   color:black;
+   float:right;
+   width: 300px;
+  padding-top: 20px
+}
+
+footer{
+  clear:left;
 }
 
 footer p {
     font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-    color:black;
-    font-size: 10px;
+    color:white;
+    font-size: 15px;
+    background-color: black;
+    height: 40px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: -10px
 }
 
 h1{
@@ -60,7 +82,10 @@ h2 a {
     font-family:  "Arial", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
     font-weight: normal;
-    text-decoration: none;    
+    text-decoration: none;
+    float:left;
+    clear:left;
+    padding-bottom: 10px;
 }
 
 h2 a:hover{
@@ -71,4 +96,27 @@ h2 a:active{
     color:limegreen;
 }
 
+p#intro{
+  font-family: 'Shadows Into Light', cursive;
+  color:black;
+  font-size:1.25rem;
+}
+img.float-left{
+  float:left;
+  clear:left;
+  padding-left: 60px;
+  padding-bottom: 20px;
+}
 
+hr#first{
+  clear:left;
+ 
+}
+
+hr#second{
+  clear:left;
+}
+
+hr#third{
+  clear:left;
+}
