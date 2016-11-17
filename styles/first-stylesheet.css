@@ -32,11 +32,23 @@ li a{
 }
 
 li a:hover {
-    color: darkorange;
+    position: relative;
+    transition-property: background, color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    background-color:white;
+    color:teal;
+    box-shadow: 2px 2px 1px black;
+  
 }
 
 li a:active{
-    background-color: white;
+    background-color: teal;
+    color:white;
+}
+
+li a:visited{
+    color:crimson;
 }
 
 
@@ -53,7 +65,7 @@ p.float-right{
    color:black;
    float:right;
    width: 300px;
-  padding-top: 20px
+   padding-top: 20px
 }
 
 footer{
@@ -70,6 +82,7 @@ footer p {
     padding-top: 30px;
     padding-bottom: -10px
 }
+
 
 h1{
     color: black;
@@ -89,11 +102,11 @@ h2 a {
 }
 
 h2 a:hover{
-    color:hotpink;
+    color:darkmagenta;
 }
 
 h2 a:active{
-    color:limegreen;
+    color:teal;
 }
 
 p#intro{
@@ -101,11 +114,23 @@ p#intro{
   color:black;
   font-size:1.25rem;
 }
+
 img.float-left{
   float:left;
   clear:left;
   padding-left: 60px;
   padding-bottom: 20px;
+}
+
+img.logo:hover{
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari */
+  transform: rotate(20deg);
+}
+
+img.logo:active{
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg)
 }
 
 hr#first{
